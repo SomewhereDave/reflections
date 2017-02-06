@@ -1,0 +1,43 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+-Narrowed down the possible lines with the error to the few snippets that changed through the 
+two versions.
+-Did not explictly highlight the exact change nor errors especially.
+
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+-It eases the process of comapring newer to older versions and also revert to these older versions if needed.
+-If you make a mistkes you easily go back to working previous versions
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+-Pro: No cluttering due to too many commits on rule-based. Also commits will be meaningful (logical) rather than just rule-based and thus possibly unrelated
+-Con: As a human you might forgetting to commit regularly enough. Also manual commits mean extra work.
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+-Because they were made for different purposes. In programming files are more intercorrelated while files saved with Google Docs and the likes can usually run all on their own. Thus adding multiple file commits would often be overly complex.
+
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+git log shows the history of all commits to repository in chronological order. By adding modifiers additional information become available (e.g. --stat adds the number of insertions and deletions)
+
+git diff takes one or two commit ids to compare their specific differences file wise. If only one commit id is provided git will automatically compare it its previous commit.
+
+
+
+How might using version control make you more confident to make changes that could break something?
+
+Since Version Control provides you with a way to safely keep track and switch between different versions of your files breaking stuff becomes less intimidating. Comparing different versions makes finding bugs easier and there is always the option to fall back to a previous working commit.
+
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Adding and pulling commits from a repository. Switch between branches.
