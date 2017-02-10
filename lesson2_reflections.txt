@@ -13,13 +13,31 @@ The staging area is a intermediary between commits and the working directory. It
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+Use git diff --staged to review changes in place and make sure its only one logical change. There is no automation here. Logical changes need to be evaluated by the user.
+
+
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+When adding new features, incorporating bugfixes, refactoring existing features. Or if you want to have separate workflows for different users, so every user gradually commits their changes to the master. Or if you want to distinguish between safe and sound stable main version and beta versions with unclean new features.
+
+
+
 How do the diagrams help you visualize the branch structure?
+
+Diagrams are more readable by adding visual connections between all the commits, which are hard to comprehend in text only and by switching between branches.
+
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+Merging two branches incorporates changes of different branches into one allowing to gradually work differences into one main version.
+
+
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Automatic merges are time savers, especially if changes are rather obvious, but automation does not work in case of conflicts. Also you still have to review all the changes you want to go into a merge, since adding the wrong features to a branch may also lead to functional but unwanted changes.
