@@ -22,7 +22,8 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Probably using some kind of standardized labeling rules to make it easier for all collaborators to see what was modified within files.
+    Changes are stored on some cloud storages for others to review then. Also all modifications uploaded would need a text file stating which files have been added, deleted and modified. This would all be very clumsy though, especially when it comes to merging. It would probably a good idea to not have more then one person working on a distinct file to minimize merging problems. Overall, not using version control would be a real hassle, yet it might be less work if the project is small and everyone on the team is working on rather independent parts (e.g. frontend and backend for a small website). 
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
