@@ -28,4 +28,4 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    When working on distinct features that should run separatly from other parts of the code. Once the feature is implemented and thoroughly tested it can join the rest of the code. This ensures people working on other parts of a project can, but don't have to go through all the changes that lead to a final version of what you were specifically working on. Also if you have pull requests on a specific branch only others who work on the same part of the project will be informed to review your cahnges. Thus branches keep the work enviroment clean, whereas working directly on master requires others to review and sync their local repositories quiet often.
